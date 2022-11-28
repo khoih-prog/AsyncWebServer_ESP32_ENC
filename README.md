@@ -131,7 +131,7 @@ This is very critical in use-cases where sending `very large data` is necessary,
 
 1. The traditional function used to send `Arduino String` is
 
-https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC/blob/6c499f1d3e91b1e33f86f3d9c6a36fa60470a38f/src/AsyncWebServer_ESP32_ENC.h#L518
+https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC/blob/e11b91ed539146ded506b2e9453d10a0e54b1bcb/src/AsyncWebServer_ESP32_ENC.h#L498
 
 ```cpp
 void send(int code, const String& contentType = String(), const String& content = String());
@@ -147,7 +147,7 @@ The required additional HEAP is about **3 times of the String size**
 
 2. To use `CString` with copying while sending. Use function
 
-https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC/blob/6c499f1d3e91b1e33f86f3d9c6a36fa60470a38f/src/AsyncWebServer_ESP32_ENC.h#L520
+https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC/blob/e11b91ed539146ded506b2e9453d10a0e54b1bcb/src/AsyncWebServer_ESP32_ENC.h#L500
 
 ```cpp
 void send(int code, const String& contentType, const char *content, bool nonDetructiveSend = true);    // RSMOD
@@ -164,7 +164,7 @@ The required additional HEAP is also about **2 times of the CString size** becau
 
 3. To use `CString` without copying while sending. Use function
 
-https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC/blob/6c499f1d3e91b1e33f86f3d9c6a36fa60470a38f/src/AsyncWebServer_ESP32_ENC.h#L520
+https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC/blob/e11b91ed539146ded506b2e9453d10a0e54b1bcb/src/AsyncWebServer_ESP32_ENC.h#L500
 
 ```cpp
 void send(int code, const String& contentType, const char *content, bool nonDetructiveSend = true);    // RSMOD
@@ -1488,7 +1488,7 @@ build_flags =
 
 ### Example [Async_AdvancedWebServer](examples/Async_AdvancedWebServer)
 
-https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC/blob/b24816d562013bb868e450863c1ab8bbb77fb8ee/examples/Async_AdvancedWebServer/Async_AdvancedWebServer.ino#L41-L194
+https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC/blob/e11b91ed539146ded506b2e9453d10a0e54b1bcb/examples/Async_AdvancedWebServer/Async_AdvancedWebServer.ino#L41-L252
 
 
 You can access the Async Advanced WebServer @ the server IP
@@ -1554,7 +1554,7 @@ You can access the Async Advanced WebServers @ the server IP and corresponding p
 Following is the debug terminal and screen shot when running example [Async_AdvancedWebServer_MemoryIssues_Send_CString](examples/Async_AdvancedWebServer_MemoryIssues_Send_CString), on `ESP32_DEV with ESP32_ENC28J60`, to demonstrate the new and powerful `HEAP-saving` feature
 
 
-##### Using CString  ===> smaller heap (120,880 bytes)
+##### Using CString  ===> smaller heap (112,772 bytes)
 
 ```cpp
 Start Async_AdvancedWebServer_MemoryIssues_Send_CString on ESP32_DEV with ESP32_ENC28J60
@@ -1586,7 +1586,7 @@ HEAP DATA - Post Send  Max heap: 322992  Free heap: 210148  Used heap: 112772
 While using `Arduino String`, the HEAP usage is very large
 
 
-#### Async_AdvancedWebServer_MemoryIssues_SendArduinoString  ===> very large heap (152,136 bytes)
+#### Async_AdvancedWebServer_MemoryIssues_SendArduinoString  ===> very large heap (143,988 bytes)
 
 ```cpp
 Start Async_AdvancedWebServer_MemoryIssues_SendArduinoString on ESP32_DEV with ESP32_ENC28J60
