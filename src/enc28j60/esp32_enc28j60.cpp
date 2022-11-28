@@ -143,7 +143,7 @@ bool ESP32_ENC::begin(int MISO_GPIO, int MOSI_GPIO, int SCLK_GPIO, int CS_GPIO, 
   }
 
   // holds a few microseconds to let DHCP start and enter into a good state
-  // FIX ME -- adresses issue https://github.com/espressif/arduino-esp32/issues/5733
+  // FIX ME -- addresses issue https://github.com/espressif/arduino-esp32/issues/5733
   delay(50);
 
   return true;
