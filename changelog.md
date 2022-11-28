@@ -28,6 +28,6 @@
 #### Releases v1.6.2
 
 1. Initial coding to port [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer) to ESP32 boards using ENC28J60 Ethernet.
-2. Bump up to `v1.6.2` to sync with [AsyncWebServer_ESP32_ENC v1.6.2](https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC).
+2. Bump up to `v1.6.2` to sync with [AsyncWebServer_WT32_ETH01 v1.6.2](https://github.com/khoih-prog/AsyncWebServer_WT32_ETH01).
 3. Use `allman astyle`
 
