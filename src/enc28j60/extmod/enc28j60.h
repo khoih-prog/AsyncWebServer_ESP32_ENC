@@ -1,3 +1,15 @@
+/****************************************************************************************************************************
+  enc28j60.h
+
+  For ENC28J60 Ethernet in ESP32 (ESP32 + ENC28J60)
+
+  AsyncWebServer_ESP32_ENC is a library for the Ethernet ENC28J60 in ESSP32 to run AsyncWebServer
+
+  Based on and modified from ESPAsyncWebServer (https://github.com/me-no-dev/ESPAsyncWebServer)
+  Built by Khoi Hoang https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC
+  Licensed under GPLv3 license
+ *****************************************************************************************************************************/
+
 // Copyright 2019 Espressif Systems (Shanghai) PTE LTD
 //
 // Licensed under the Apache License, Version 2.0 (the "License");

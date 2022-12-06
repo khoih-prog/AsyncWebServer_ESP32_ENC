@@ -1,3 +1,20 @@
+/****************************************************************************************************************************
+  esp_eth_spi_enc28j60.c
+
+  For ENC28J60 Ethernet in ESP32 (ESP32 + ENC28J60)
+
+  AsyncWebServer_ESP32_ENC is a library for the Ethernet ENC28J60 in ESSP32 to run AsyncWebServer
+
+  Based on and modified from ESPAsyncWebServer (https://github.com/me-no-dev/ESPAsyncWebServer)
+  Built by Khoi Hoang https://github.com/khoih-prog/AsyncWebServer_ESP32_ENC
+  Licensed under GPLv3 license
+ *****************************************************************************************************************************/
+
+/*
+  esp_eth_spi_enc28j60.c - ETH PHY support for ENC28J60
+  Based on ETH.h from arduino-esp32 and esp-idf
+  and Tobozo ESP32-ENC28J60 library
+*/
 
 #include <stdio.h>
 #include <string.h>

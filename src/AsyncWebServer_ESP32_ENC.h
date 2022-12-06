@@ -22,11 +22,12 @@
   You should have received a copy of the GNU Lesser General Public License along with this library;
   if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-  Version: 1.6.2
+  Version: 1.6.3
 
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.6.2   K Hoang      27/11/2022 Initial porting for ENC28J60 + ESP32. Sync with AsyncWebServer_WT32_ETH01 v1.6.2
+  1.6.3   K Hoang      05/12/2022 Add Async_WebSocketsServer, MQTT examples
  *****************************************************************************************************************************/
 
 #ifndef _AsyncWebServer_ESP32_ENC_H_
@@ -54,21 +55,21 @@
     #warning Using code for ESP32 core v2.0.0+ in AsyncWebServer_ESP32_ENC.h
   #endif
 
-  #define ASYNC_WEBSERVER_ESP32_ENC_VERSION      "AsyncWebServer_ESP32_ENC v1.6.2 for core v2.0.0+"
+  #define ASYNC_WEBSERVER_ESP32_ENC_VERSION      "AsyncWebServer_ESP32_ENC v1.6.3 for core v2.0.0+"
 #else
 
   #if (_ASYNC_WEBSERVER_LOGLEVEL_ > 2 )
     #warning Using code for ESP32 core v1.0.6- in AsyncWebServer_ESP32_ENC.h
   #endif
 
-  #define ASYNC_WEBSERVER_ESP32_ENC_VERSION      "AsyncWebServer_ESP32_ENC v1.6.2 for core v1.0.6-"
+  #define ASYNC_WEBSERVER_ESP32_ENC_VERSION      "AsyncWebServer_ESP32_ENC v1.6.3 for core v1.0.6-"
 #endif
 
 #define ASYNC_WEBSERVER_ESP32_ENC_VERSION_MAJOR     1
 #define ASYNC_WEBSERVER_ESP32_ENC_VERSION_MINOR     6
-#define ASYNC_WEBSERVER_ESP32_ENC_VERSION_PATCH     2
+#define ASYNC_WEBSERVER_ESP32_ENC_VERSION_PATCH     3
 
-#define ASYNC_WEBSERVER_ESP32_ENC_VERSION_INT       1006002
+#define ASYNC_WEBSERVER_ESP32_ENC_VERSION_INT       1006003
 
 /////////////////////////////////////////////////
 

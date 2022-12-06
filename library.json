@@ -1,6 +1,6 @@
 {
   "name":"AsyncWebServer_ESP32_ENC",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description":"Asynchronous HTTP and WebSocket Server Library for (ESP32 + ENC28J60). Now supporting using CString to save heap to send very large data and with examples to demo how to use beginChunkedResponse() to send large html in chunks",
   "keywords":"http, async, async-webserver, websocket, webserver, esp32, enc28j60",
   "authors": 
